@@ -4,6 +4,10 @@ Using raw data and limited information, create an analysis for Allen County, Ind
 
 Source data can be found in /src_data
 
+## Mapbox Interactive Map
+
+[Interactive Map of Allen County pipe data](https://api.mapbox.com/styles/v1/awshum/ckx4a953k5xnc14kzqn3wipiu.html?title=view&access_token=pk.eyJ1IjoiYXdzaHVtIiwiYSI6ImNreDJtODNiMTFramYycnQ5aG1uejVncDAifQ._Mwl7bk0McztwyCfvyTG3g&zoomwheel=true&fresh=true#12.24/41.07561/-85.13472)
+
 ## Understanding the data
 
 GISMAPSTREET.txt as provided has 15 columns:
@@ -35,3 +39,22 @@ Street Consequence has 5 columns:
 | STREETNAME         | Name of the street                                                           |
 | MINORGRIDNAME      | Minor Grid Name, custom name or ID?                                          |
 | Street Consequence | Consequence associated with the street, greater number = greater consequence |
+
+## Helpful Mapbox Links
+
+* [Get started with Mapbox GL JS expressions](https://docs.mapbox.com/help/tutorials/mapbox-gl-js-expressions/#set-up-a-map)
+* [Mapbox Style Spec Data Expressions](https://docs.mapbox.com/mapbox-gl-js/style-spec/expressions/#data-expressions)
+* [Recipe Basics](https://docs.mapbox.com/mapbox-tiling-service/examples/basic-recipe-using-zoom-levels/)
+* [API uploads](https://docs.mapbox.com/api/maps/uploads/)
+
+## Next Steps
+
+1. Use a recipe to specify min and max zoom for the tileset to address zoom issues
+2. Improve wrangling code processing time
+3. Add functions to ETL pipeline code to improve readability
+4. Discover why some streets seem to have multiple different consequence values
+
+## Notes
+
+Initial test Tileset ID : awshum.75w3tcn9
+Full tileset ID : awshum.allen-co-pipes
