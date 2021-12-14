@@ -1,3 +1,2 @@
-test_data/mapstreet-test.csv
-test_data/combined_test.csv
+test_data/*
 .ipynb_checkpoints
